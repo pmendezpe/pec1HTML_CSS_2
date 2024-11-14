@@ -1,0 +1,11 @@
+.footer {
+    background-color: darken($background-color, 10%);
+    padding: $spacing-unit * 2;
+    text-align: center;
+  
+    &__text {
+      color: $text-color;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }

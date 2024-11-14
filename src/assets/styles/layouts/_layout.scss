@@ -1,0 +1,47 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-unit * 2;
+    padding: $spacing-unit * 2;
+  
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+  
+    &__text {
+      flex: 1;
+      padding: $spacing-unit;
+  
+      h2 {
+        margin-bottom: $spacing-unit / 2;
+        color: $primary-color;
+      }
+  
+      .tip {
+        margin-top: $spacing-unit;
+        background-color: lighten($secondary-color, 40%);
+        padding: $spacing-unit / 2;
+        border-radius: 0.5rem;
+  
+        i {
+          margin-right: 0.5rem;
+          color: $primary-color;
+        }
+      }
+    }
+  
+    &__image {
+      flex: 1;
+      padding: $spacing-unit;
+    }
+  }
